@@ -1,0 +1,122 @@
+:root {
+	--left-space: 48px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+	min-height: 100vh;
+	display: flex;
+}
+
+.image-section {
+	background-position: center;
+	background-image: url("./9v5qi8mb.bmp");
+	background-size: cover;
+	flex: 4;
+}
+.text-section {
+	flex: 5;
+	color: white;
+	background-color: #202020;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text-section > p {
+	font-size: 1.5rem;
+	margin-left: var(--left-space);
+	font-weight: bold;
+}
+
+.text-section p:first-child {
+	margin-top: 0;
+}
+
+.inputs-section {
+	color: white;
+	background-color: #202020;
+	margin-top: 32px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: var(--left-space);
+}
+
+.inputs-section label {
+	font-size: 0.7rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1px;
+}
+
+.inputs-section input {
+	box-sizing: border-box;
+	border: 1px solid #e5e7eb;
+	border-radius: 4px;
+	padding: 4px 8px;
+	width: 100%;
+	font-size: 1rem;
+	margin-right: 32px;
+}
+
+.inputs-section h3 {
+	font-weight: 700;
+	color: rgb(199, 130, 26);
+}
+
+.inputs > div {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 84px;
+	row-gap: 18px;
+	margin-bottom: 18px;
+}
+
+.inputs label {
+	display: block;
+}
+
+input:focus {
+	background: rgb(231, 192, 120);
+	outline: none;
+}
+
+input.error {
+	border: 1px solid red;
+}
+
+.error-message {
+	margin-top: 0;
+	font-size: 0.8rem;
+	color: red;
+}
+
+#create-account {
+	margin-left: var(--left-space);
+	margin-top: 32px;
+	border: none;
+	background-color: rgb(150, 98, 20);
+	padding: 12px 38px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+p.log-in {
+	font-weight: 500;
+	font-size: 1.2rem;
+	margin-top: 32px;
+}
+
+.log-in a {
+	color: rgb(199, 130, 26);
+	font-style: italic;
+	font-weight: 700;
+	text-decoration: none;
+}
